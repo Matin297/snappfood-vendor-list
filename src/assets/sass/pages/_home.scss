@@ -1,0 +1,7 @@
+.home {
+  background-color: color("secondry-500");
+  color: white;
+  padding: 2 * $size-1;
+  min-height: 100vh;
+  @include flex-center;
+}

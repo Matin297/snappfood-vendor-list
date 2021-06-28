@@ -1,0 +1,31 @@
+.snackbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3 * $size-1;
+  color: white;
+  padding: 0.5rem 10%;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+
+  &--error {
+    background-color: color("error-500");
+
+    svg {
+      fill: white;
+      width: 3 * $size-1;
+    }
+  }
+
+  &--default {
+    background-color: color("grey-800");
+
+    svg {
+      fill: white;
+      width: 3 * $size-1;
+    }
+  }
+}

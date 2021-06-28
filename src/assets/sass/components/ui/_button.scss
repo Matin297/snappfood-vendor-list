@@ -1,0 +1,19 @@
+.button {
+  @include flex-center;
+  gap: $size-1;
+  padding: $size-1 2 * $size-1;
+  cursor: pointer;
+  font-size: 2 * $size-1;
+  border-radius: $size-1;
+  transition: all 200ms ease-in-out;
+  border: 1px solid transparent;
+
+  &--contained {
+    background-color: color("primary-600");
+    color: white;
+
+    &:hover {
+      background-color: darken(color("primary-600"), 10%);
+    }
+  }
+}

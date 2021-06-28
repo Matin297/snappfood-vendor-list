@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Providers from './providers';
+import Router from 'router/router';
+// STYLES
+import 'assets/fonts/Farsi_numerals/webFonts/css/fontiran.css'; // IRANSansFaNum
+import 'assets/sass/main.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Providers>
+      <Router />
+    </Providers>
   </React.StrictMode>,
   document.getElementById('root')
 );

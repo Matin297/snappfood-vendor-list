@@ -27,7 +27,9 @@ function VendorsPage({ fetchVendors, vendorsData }) {
     const requestSortHandler = useCallback(sortings => {
         fetchVendors({
             page: 0,
-            sortings: JSON.stringify(sortings)
+            filters: JSON.stringify({
+                sortings
+            })
         });
     }, [fetchVendors])
 
